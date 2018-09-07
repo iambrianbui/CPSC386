@@ -51,8 +51,12 @@ class Rectangle:
     def area(self):
         return self.length() * self.width()
 
+    def perimeter(self):
+        return (2 * self.length()) + (2 * self.width())
+
     def __str__(self):
         return ' Upper Right:  ' + str(self.upperright()) + '\n Upper Left:  ' + str(self.upperleft()) + \
                '\n Bottom Right:  ' + str(self.bottomright()) + '\n Bottom Left:  ' + str(self.bottomleft()) + \
-               '\n Length:  ' + str(self.length()) + '\n Width:  ' + str(self.width()) + '\n Area:  ' + str(self.area())
+               '\n Length:  ' + str(self.length()) + '\n Width:  ' + str(self.width()) + \
+               '\n Area:  ' + str(self.area()) + '\n Perimeter:  ' + str(self.perimeter())
 
