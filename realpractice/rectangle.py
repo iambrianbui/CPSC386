@@ -56,6 +56,3 @@ class Rectangle:
                '\n Bottom Right:  ' + str(self.bottomright()) + '\n Bottom Left:  ' + str(self.bottomleft()) + \
                '\n Length:  ' + str(self.length()) + '\n Width:  ' + str(self.width()) + '\n Area:  ' + str(self.area())
 
-
-r = Rectangle(Point(1, 1), Point(4, 5))
-print(str(r))
