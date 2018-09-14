@@ -1,11 +1,15 @@
 from sept14Point import Point
 
+
 class Vector:
+
     def __init__(self, x=0, y=0, z=0):
         self.__x, self.__y, self.__z = x, y, z
+
     @classmethod
     def create(cls, pta, ptb):
         return cls(ptb.x - pta.x, ptb.y - pta.y, ptb.z - pta.z)
+
     @staticmethod
     def create(pta, ptb):
         return Vector(ptb.x - pta.x, ptb.y - pta.y, ptb.z - pta.z)
@@ -31,5 +35,5 @@ class Vector:
                                               self.x * other.y - self.y * other.x)
 
 
-V = Vector(3,4,0)
-u = Vector.create(Point(1,2), Point(6, 9))
+#v = Vector(3,4)
+#u = Vector.create(Point(1,2), Point(6,9))
