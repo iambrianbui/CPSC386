@@ -9,11 +9,6 @@ class Point:
         def sety(self, y): self.__y = y
         def setz(self, z): self.__z = z
 
-        x = property(getx, sety)
+        x = property(getx, setx)
         y = property(gety, sety)
         z = property(getz, setz)
-
-Point p(1,2,3)
-print(p.x)
-p,y = 12
-print(p.y)
