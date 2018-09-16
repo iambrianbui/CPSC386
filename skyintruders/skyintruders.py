@@ -24,6 +24,7 @@ def run_game():
         gf.check_events(ai_settings, screen, plane, bullets)
         plane.update()
         bullets.update()
+        gf.update_bullets(bullets)
         gf.update_screen(ai_settings, screen, plane, bullets)
 
         #  What for keyboard and mouse events.
