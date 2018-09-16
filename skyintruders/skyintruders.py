@@ -5,6 +5,7 @@ from pygame.sprite import Group
 
 from settings import Settings
 from plane import Plane
+from alien import Alien
 import game_functions as gf
 
 def run_game():
@@ -16,8 +17,15 @@ def run_game():
 
     #  Make a ship
     plane = Plane(ai_settings, screen)
+    #  Make an alien
+    alien = Alien(ai_settings, screen)
     #  Make a group to store bullets in
     bullets = Group()
+    #  Make a group to store aliens in
+    aliens = Group()
+
+    #  Create the fleet of aliens
+    gf.create_fleet(ai_settings, screen, aliens)
 
     #  Start the main loop for the game.
     while True:
@@ -25,7 +33,7 @@ def run_game():
         plane.update()
         bullets.update()
         gf.update_bullets(bullets)
-        gf.update_screen(ai_settings, screen, plane, bullets)
+        gf.update_screen(ai_settings, screen, plane, aliens, bullets)
 
         #  What for keyboard and mouse events.
         for event in pygame.event.get():

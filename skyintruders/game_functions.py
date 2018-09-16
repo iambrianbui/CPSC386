@@ -2,6 +2,22 @@ import sys
 
 import pygame
 from bullet import Bullet
+from alien import Alien
+
+def create_fleet(ai_settings, screen, aliens):
+    #  Create an alien and find the number of aliens that can fit
+    alien = Alien(ai_settings, screen)
+    alien_width = alien.rect.width
+    available_space_x = ai_settings.screen_width - 2 * alien_width
+    number_aliens_x = int(available_space_x / (2 * alien_width))
+
+    #  Create the first row of aliens
+    for alien_number in range(number_aliens_x):
+        #  Create an alien and place it into the row
+        alien = Alien(ai_settings, screen)
+        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.rect.x = alien.x
+        aliens.add(alien)
 
 def update_bullets(bullets):
     #  Get rid of bullets that aren't on the screen
@@ -49,13 +65,14 @@ def check_events(ai_settings, screen, plane, bullets):
 
 
 #  Update the screen
-def update_screen(ai_settings, screen, plane, bullets):
+def update_screen(ai_settings, screen, plane, aliens, bullets):
     #  Redraw every frame
     screen.fill(ai_settings.bg_color)
     #  Redraw all bullets behind ship and aliens
     for bullet in bullets.sprites ():
         bullet.draw_bullet()
     plane.blitme()
+    aliens.draw(screen)
 
     #  Show most current frame
     pygame.display.flip()
