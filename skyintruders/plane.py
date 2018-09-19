@@ -23,6 +23,10 @@ class Plane():
         self.moving_right = False
         self.moving_left = False
 
+
+    def center_plane(self):
+        self.center = self.screen_rect.centerx
+
 #  Update the ship position based on movement flags
     def update(self):
         if self.moving_right and self.rect.right < self.screen_rect.right:
