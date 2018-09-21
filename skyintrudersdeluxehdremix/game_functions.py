@@ -90,6 +90,10 @@ def fire_bullet(ai_settings, screen, plane, bullets):
     if len(bullets) < ai_settings.bullets_allowed:
         new_bullet = Bullet(ai_settings, screen, plane)
         bullets.add(new_bullet)
+        #pygame.mixer.music.load('sounds/fire.mp3')
+        fire = pygame.mixer.Sound('sounds/fire.mp3')
+        pygame.mixer.music.play(fire)
+
 
 
 def check_keyup_events(event, plane):
@@ -107,8 +111,6 @@ def check_events(ai_settings, screen, stats, sb, play_button, plane, aliens, bul
 
         elif event.type == pygame.KEYDOWN:
             check_keydown_events(event, ai_settings, screen, plane, bullets)
-            print("fire")
-
 
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, plane)
@@ -180,7 +182,7 @@ def change_fleet_direction(ai_settings, aliens):
 
 
 def plane_hit(ai_settings, stats, sb, screen, plane, aliens, bullets):
-    if stats.planes_left > 0:
+    if stats.planes_left > 1:
         #  Decrement ships left
         stats.planes_left -= 1
 
@@ -199,8 +201,8 @@ def plane_hit(ai_settings, stats, sb, screen, plane, aliens, bullets):
         sleep(0.5)
     else:
         stats.game_active = False
-        gameOverSound = pygame.mixer.Sound('/sounds/gameover.wav')
-        gameOverSound.play()
+        gameoversound = pygame.mixer.Sound('sounds/gameover.wav')
+        gameoversound.play()
         pygame.mouse.set_visible(True)
 
 

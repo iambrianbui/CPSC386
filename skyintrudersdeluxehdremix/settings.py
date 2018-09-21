@@ -11,7 +11,7 @@ class Settings():
         self.bg_color = (115, 196, 252)
 
         #  Ship settings:
-        self.plane_limit = 3
+        self.plane_limit = 1
 
         #  Bullet settings:
         self.bullet_width = 6
@@ -32,7 +32,7 @@ class Settings():
     def initialize_dynamic_settings(self):
         self.plane_speed_factor = 3
         self.bullet_speed_factor = 3
-        self.alien_speed_factor = 3
+        self.alien_speed_factor = 30
 
         #  1 is right, -1 is left
         self.fleet_direction = 1
