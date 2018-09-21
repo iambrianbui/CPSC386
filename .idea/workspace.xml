@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c3bf6c-6708-4683-a1a7-60e126d43bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skyintruders/scoreboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/game_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/game_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/plane.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/skyintruders/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/skyintruders.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/skyintruders.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,23 +51,24 @@
     <session id="1456230852">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="11939" />
+          <entry key="py" value="11942" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="11939" />
+          <entry key="Python" value="11942" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skyintruders/skyintruders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="833">
               <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -108,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skyintruders/game_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+            <state relative-caret-position="1513">
+              <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <marker date="1537426688185" expanded="true" signature="471:647" ph="..." />
@@ -141,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skyintruders/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="262">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -503,13 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1537424816250" expanded="true" signature="96:97" ph="..." />
-            <marker date="1537424816250" expanded="true" signature="96:98" ph="..." />
-            <marker date="1537424816250" expanded="true" signature="1037:1046" ph="..." />
-            <marker date="1537424816250" expanded="true" signature="1338:1347" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,10 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1537424651158" expanded="true" signature="874:923" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,10 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <marker date="1537424326775" expanded="true" signature="18:19" ph="..." />
-            <marker date="1537424326775" expanded="true" signature="18:39" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,12 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1537165152021" expanded="true" signature="68:69" ph="..." />
-            <marker date="1537165152021" expanded="true" signature="68:74" ph="..." />
-            <marker date="1537165152021" expanded="true" signature="700:882" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -555,16 +528,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyintruders/skyintruders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintruders/game_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+        <state relative-caret-position="1513">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <marker date="1537426688185" expanded="true" signature="471:647" ph="..." />
@@ -590,20 +570,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skyintruders/skyintruders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skyintruders/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="262">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
