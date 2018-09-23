@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c3bf6c-6708-4683-a1a7-60e126d43bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/skyintruders/sounds/gameover.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/game_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/images/paddle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/paddle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/pong.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CPSC386.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CPSC386.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/game_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skyintruders/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/skyintruders/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,125 +60,97 @@
     <session id="1456230852">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="11942" />
+          <entry key="py" value="14537" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="11942" />
+          <entry key="Python" value="14537" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="2" />
-          <entry key="py" value="8" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="2" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/pong.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="201" column="44" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <marker date="1537687823608" expanded="true" signature="168:173" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/bullet.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="306">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1537688094715" expanded="true" signature="53:58" ph="..." />
+                <marker date="1537688094715" expanded="true" signature="546:683" ph="..." />
+                <marker date="1537688094715" expanded="true" signature="730:731" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/alien.py">
+        <entry file="file://$PROJECT_DIR$/pong/paddle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state relative-caret-position="377">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1537688005524" expanded="true" signature="30:31" ph="..." />
+                <marker date="1537688005524" expanded="true" signature="30:36" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/plane.py">
+        <entry file="file://$PROJECT_DIR$/pong/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="170">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1537687722379" expanded="true" signature="17:18" ph="..." />
+                <marker date="1537687722379" expanded="true" signature="17:19" ph="..." />
+                <marker date="1537687722379" expanded="true" signature="17:24" ph="..." />
+                <marker date="1537687722379" expanded="true" signature="43:52" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_stats.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/skyintruders.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/scoreboard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/readme.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -221,14 +195,18 @@
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/settings.py" />
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/skyintruders.py" />
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py" />
+        <option value="$PROJECT_DIR$/pong/images/game_functions.py" />
+        <option value="$PROJECT_DIR$/pong/settings.py" />
+        <option value="$PROJECT_DIR$/pong/pong.py" />
+        <option value="$PROJECT_DIR$/pong/paddle.py" />
+        <option value="$PROJECT_DIR$/pong/game_functions.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="646" />
-    <option name="y" value="80" />
-    <option name="width" value="1529" />
-    <option name="height" value="1185" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -248,7 +226,13 @@
             <path>
               <item name="CPSC386" type="b2602c69:ProjectViewProjectNode" />
               <item name="CPSC386" type="462c0819:PsiDirectoryNode" />
-              <item name="skyintrudersdeluxehdremix" type="462c0819:PsiDirectoryNode" />
+              <item name="pong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CPSC386" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CPSC386" type="462c0819:PsiDirectoryNode" />
+              <item name="pong" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,14 +243,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\pong" />
+      <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\pong\images" />
       <recent name="$PROJECT_DIR$/skyintruders/sounds" />
       <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\skyintruders\image" />
       <recent name="$PROJECT_DIR$/skyintruders" />
-      <recent name="$PROJECT_DIR$/skyintruders/image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -281,7 +266,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.skyintruders (1)">
+  <component name="RunManager" selected="Python.pong">
+    <configuration name="pong" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CPSC386" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pong" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pong/pong.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sept14Point" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CPSC386" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -316,27 +322,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/realpractice/sept14triangle.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sept14vector" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CPSC386" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/realpractice" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/realpractice/sept14vector.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,17 +375,17 @@
     <list>
       <item itemvalue="Python.skyintruders" />
       <item itemvalue="Python.sept14Point" />
-      <item itemvalue="Python.sept14vector" />
       <item itemvalue="Python.sept14triangle" />
       <item itemvalue="Python.skyintruders (1)" />
+      <item itemvalue="Python.pong" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pong" />
         <item itemvalue="Python.skyintruders (1)" />
         <item itemvalue="Python.skyintruders" />
         <item itemvalue="Python.sept14triangle" />
         <item itemvalue="Python.sept14Point" />
-        <item itemvalue="Python.sept14vector" />
       </list>
     </recent_temporary>
   </component>
@@ -427,14 +412,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="646" y="80" width="1529" height="1185" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30039787" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23551106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3284538" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3264642" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,9 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2955">
           <caret line="202" column="28" selection-start-line="202" selection-start-column="28" selection-end-line="202" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,13 +557,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintruders/bullet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintruders/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,12 +583,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/bullet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/alien.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/plane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_stats.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/skyintruders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -632,44 +647,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/skyintruders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/alien.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/readme.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/plane.py">
+    <entry file="file://$PROJECT_DIR$/pong/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1537687722379" expanded="true" signature="17:18" ph="..." />
+            <marker date="1537687722379" expanded="true" signature="17:19" ph="..." />
+            <marker date="1537687722379" expanded="true" signature="17:24" ph="..." />
+            <marker date="1537687722379" expanded="true" signature="43:52" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_stats.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py">
+    <entry file="file://$PROJECT_DIR$/pong/pong.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="201" column="44" selection-start-line="201" selection-start-column="44" selection-end-line="201" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <marker date="1537687823608" expanded="true" signature="168:173" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/paddle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <marker date="1537688005524" expanded="true" signature="30:31" ph="..." />
+            <marker date="1537688005524" expanded="true" signature="30:36" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1537688094715" expanded="true" signature="53:58" ph="..." />
+            <marker date="1537688094715" expanded="true" signature="546:683" ph="..." />
+            <marker date="1537688094715" expanded="true" signature="730:731" ph="..." />
           </folding>
         </state>
       </provider>
