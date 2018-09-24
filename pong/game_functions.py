@@ -28,9 +28,18 @@ def check_keyup_events(event, paddle):
         paddle.moving_down = False
 
 
-def update_screen(ai_settings, screen, paddle):
+def update_screen(ai_settings, screen, paddle, ball):
     screen.fill(ai_settings.bg_color)
     paddle.blitme()
+    ball.draw_ball()
 
     #  Make the most recently drawn screen visible
     pygame.display.flip()
+
+def update_ball(ai_settings, paddle, ball):
+    check_collision(paddle, ball, ai_settings)
+    ball.update(ai_settings)
+
+def check_collision(paddle, ball, ai_settings):
+    if ball.rect.colliderect(paddle.rect):
+        ai_settings.ball_x_direction *= -1

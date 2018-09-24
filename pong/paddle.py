@@ -1,13 +1,15 @@
 import pygame
 
+
 class Paddle():
 
     def __init__(self, ai_settings, screen):
+        super(Paddle, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
 
         #  Load the paddle image and get its rect
-        self.image = pygame.image.load('images/paddle.png')
+        self.image = pygame.image.load('images/p1paddle.png')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 

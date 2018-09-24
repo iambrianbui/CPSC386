@@ -9,3 +9,13 @@ class Settings():
 
         #  Paddle settings
         self.paddle_speed_factor = 1.5
+
+        #  Ball settings
+        self.ball_speed_factor = 1
+        self.ball_width = 16
+        self.ball_height = 16
+        self.ball_color = 255, 255, 255
+
+        #  Ball direction
+        self.ball_x_direction = -1               #  1 = moving to the right
+        self.ball_y_direction = 1               #  1 = moving down

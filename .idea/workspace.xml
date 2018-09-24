@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c3bf6c-6708-4683-a1a7-60e126d43bc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pong/game_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pong/images/paddle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pong/paddle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pong/pong.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pong/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CPSC386.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CPSC386.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/ball.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/images/p1paddle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/paddle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/pong.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/pong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,37 +59,37 @@
     <session id="1456230852">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="14537" />
+          <entry key="py" value="16881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="14537" />
+          <entry key="Python" value="16881" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="2" />
-          <entry key="py" value="12" />
+          <entry key="png" value="3" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="2" />
-          <entry key="Python" value="12" />
+          <entry key="Image" value="3" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
     </session>
@@ -100,39 +99,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/pong.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="417">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1537687823608" expanded="true" signature="168:173" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1537688094715" expanded="true" signature="53:58" ph="..." />
-                <marker date="1537688094715" expanded="true" signature="546:683" ph="..." />
-                <marker date="1537688094715" expanded="true" signature="730:731" ph="..." />
+                <marker date="1537771001949" expanded="true" signature="222:227" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/ball.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1537770297482" expanded="true" signature="68:69" ph="..." />
+                <marker date="1537770297482" expanded="true" signature="68:74" ph="..." />
+                <marker date="1537770297482" expanded="true" signature="603:833" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1537771015618" expanded="true" signature="53:58" ph="..." />
+                <marker date="1537771015618" expanded="true" signature="546:683" ph="..." />
+                <marker date="1537771015618" expanded="true" signature="736:737" ph="..." />
+                <marker date="1537771015618" expanded="true" signature="985:1016" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/images/paddle.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pong/paddle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="187">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding>
-                <marker date="1537688005524" expanded="true" signature="30:31" ph="..." />
-                <marker date="1537688005524" expanded="true" signature="30:36" ph="..." />
+                <marker date="1537771120644" expanded="true" signature="31:32" ph="..." />
+                <marker date="1537771120644" expanded="true" signature="31:37" ph="..." />
               </folding>
             </state>
           </provider>
@@ -141,13 +161,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1537687722379" expanded="true" signature="17:18" ph="..." />
-                <marker date="1537687722379" expanded="true" signature="17:19" ph="..." />
-                <marker date="1537687722379" expanded="true" signature="17:24" ph="..." />
-                <marker date="1537687722379" expanded="true" signature="43:52" ph="..." />
+                <marker date="1537769483032" expanded="true" signature="17:18" ph="..." />
+                <marker date="1537769483032" expanded="true" signature="17:19" ph="..." />
+                <marker date="1537769483032" expanded="true" signature="17:24" ph="..." />
+                <marker date="1537769483032" expanded="true" signature="43:52" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,6 +182,7 @@
       <find>p2</find>
       <find>check_play</find>
       <find>pygame.display.flip</find>
+      <find>updat</find>
     </findStrings>
     <replaceStrings>
       <replace>a</replace>
@@ -197,9 +218,10 @@
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py" />
         <option value="$PROJECT_DIR$/pong/images/game_functions.py" />
         <option value="$PROJECT_DIR$/pong/settings.py" />
+        <option value="$PROJECT_DIR$/pong/ball.py" />
         <option value="$PROJECT_DIR$/pong/pong.py" />
-        <option value="$PROJECT_DIR$/pong/paddle.py" />
         <option value="$PROJECT_DIR$/pong/game_functions.py" />
+        <option value="$PROJECT_DIR$/pong/paddle.py" />
       </list>
     </option>
   </component>
@@ -216,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,7 +261,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,8 +269,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\pong" />
       <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\pong\images" />
+      <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\pong" />
       <recent name="$PROJECT_DIR$/skyintruders/sounds" />
       <recent name="C:\Users\iambrianbui\Documents\GitHub\CPSC386\skyintruders\image" />
       <recent name="$PROJECT_DIR$/skyintruders" />
@@ -414,7 +436,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23551106" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23551106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -514,7 +536,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintruders/image/plane.bmp" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/pygame/sprite.py" />
     <entry file="file://$PROJECT_DIR$/skyintruders/image/plane.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -587,39 +608,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="201" column="9" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/bullet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/alien.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/plane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/game_stats.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -639,61 +642,79 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/scoreboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/skyintrudersdeluxehdremix/readme.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pong/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <marker date="1537687722379" expanded="true" signature="17:18" ph="..." />
-            <marker date="1537687722379" expanded="true" signature="17:19" ph="..." />
-            <marker date="1537687722379" expanded="true" signature="17:24" ph="..." />
-            <marker date="1537687722379" expanded="true" signature="43:52" ph="..." />
+            <marker date="1537769483032" expanded="true" signature="17:18" ph="..." />
+            <marker date="1537769483032" expanded="true" signature="17:19" ph="..." />
+            <marker date="1537769483032" expanded="true" signature="17:24" ph="..." />
+            <marker date="1537769483032" expanded="true" signature="43:52" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pong/pong.py">
+    <entry file="file://$PROJECT_DIR$/pong/ball.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="510">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1537770297482" expanded="true" signature="68:69" ph="..." />
+            <marker date="1537770297482" expanded="true" signature="68:74" ph="..." />
+            <marker date="1537770297482" expanded="true" signature="603:833" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/pygame/sprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1537687823608" expanded="true" signature="168:173" ph="..." />
+            <marker date="1537771015618" expanded="true" signature="53:58" ph="..." />
+            <marker date="1537771015618" expanded="true" signature="546:683" ph="..." />
+            <marker date="1537771015618" expanded="true" signature="736:737" ph="..." />
+            <marker date="1537771015618" expanded="true" signature="985:1016" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/images/paddle.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/pong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1537771001949" expanded="true" signature="222:227" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pong/paddle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
-            <marker date="1537688005524" expanded="true" signature="30:31" ph="..." />
-            <marker date="1537688005524" expanded="true" signature="30:36" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1537688094715" expanded="true" signature="53:58" ph="..." />
-            <marker date="1537688094715" expanded="true" signature="546:683" ph="..." />
-            <marker date="1537688094715" expanded="true" signature="730:731" ph="..." />
+            <marker date="1537771120644" expanded="true" signature="31:32" ph="..." />
+            <marker date="1537771120644" expanded="true" signature="31:37" ph="..." />
           </folding>
         </state>
       </provider>

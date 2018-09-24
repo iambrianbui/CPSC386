@@ -2,8 +2,10 @@ import sys
 
 import pygame
 
+from pygame.sprite import Group
 from settings import Settings
 from paddle import Paddle
+from ball import Ball
 import game_functions as gf
 
 
@@ -18,12 +20,18 @@ def run_game():
     #  Make a paddle
     paddle = Paddle(ai_settings, screen)
 
+    #  Make a ball
+    ball = Ball(ai_settings, screen, paddle)
+
+
+
     #  Start the main loop for the game.
     while True:
         #  Watch for keyboard and mouse events
         gf.check_events(paddle)
         paddle.update()
-        gf.update_screen(ai_settings, screen, paddle)
+        gf.update_ball(ai_settings, paddle, ball)
+        gf.update_screen(ai_settings, screen, paddle, ball)
 
 
 run_game()
