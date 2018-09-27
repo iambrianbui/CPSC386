@@ -6,6 +6,7 @@ from pygame.sprite import Group
 from settings import Settings
 from game_stats import GameStats
 from scoreboard import Scoreboard
+from button import Button
 from p1paddle import P1Paddle
 from p2paddle import P2Paddle
 from ball import Ball
@@ -19,6 +20,9 @@ def run_game():
     screen = pygame.display.set_mode((ai_settings.screen_width,
                                       ai_settings.screen_height))
     pygame.display.set_caption("Pong")
+
+    #  Make play button
+    play_button = Button(ai_settings, screen, "Play")
 
     #  Handle stats and scoreboard
     stats = GameStats(ai_settings)
@@ -38,11 +42,14 @@ def run_game():
     #  Start the main loop for the game.
     while True:
         #  Watch for keyboard and mouse events
-        gf.check_events(p1paddle, p2paddle)
-        p1paddle.update()
-        p2paddle.update()
-        gf.update_ball(ai_settings, p1paddle, p2paddle, ball)
-        gf.update_screen(ai_settings, screen, p1paddle, p2paddle, ball)
+        gf.check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle)
+
+        if stats.game_active:
+            p1paddle.update()
+            p2paddle.update()
+            gf.update_ball(ai_settings, stats, sb, screen, p1paddle, p2paddle, ball)
+
+        gf.update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button)
 
 
 run_game()

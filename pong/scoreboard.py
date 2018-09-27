@@ -1,6 +1,7 @@
 import pygame.font
 from pygame.sprite import Group
 
+
 class Scoreboard():
 
 
@@ -15,21 +16,30 @@ class Scoreboard():
         self.font = pygame.font.SysFont(None, 48)
 
         #  Prepare the HUD
-        self.prep_score()
+        self.prep_score(ai_settings)
 
 
-    def prep_score(self):
+    #  Prepare the score on both sides
+    def prep_score(self, ai_settings):
         p1score = int(round(self.stats.p1score, -1))
         p2score = int(round(self.stats.p2score, -1))
-        score_str = str(self.stats.p1score)
+        p1score_str = str(self.stats.p1score)
+        p2score_str = str(self.stats.p2score)
 
-        self.score_image = self.font.render(score_str, True, self.text_color, self.ai_settings.bg_color)
+        self.p1score_image = self.font.render(p1score_str, True, self.text_color, self.ai_settings.bg_color)
+        self.p2score_image = self.font.render(p2score_str, True, self.text_color, self.ai_settings.bg_color)
 
         #  Display the score at the top center
-        self.score_rect = self.score_image.get_rect()
-        self.score_rect.top = 20
-        self.score_rect.center = self.screen_rect.center
+        self.p1score_rect = self.p1score_image.get_rect()
+        self.p1score_rect.y = 20
+        self.p1score_rect.x = (ai_settings.screen_width/2) - 64
+
+        self.p2score_rect = self.p2score_image.get_rect()
+        self.p2score_rect.y = 20
+        self.p2score_rect.x = (ai_settings.screen_width/2) + 64
 
 
+    #  Actually display the score
     def show_score(self):
-        self.screen.blit(self.score_image, self.score_rect)
+        self.screen.blit(self.p1score_image, self.p1score_rect)
+        self.screen.blit(self.p2score_image, self.p2score_rect)

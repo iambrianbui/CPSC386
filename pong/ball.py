@@ -40,3 +40,10 @@ class Ball(Sprite):
 
     def draw_ball(self):
         pygame.draw.rect(self.screen, self.color, self.rect)
+
+
+    def reset_ball(self):
+        self.y = 1
+        self.x = 600
+        self.rect.y = self.y
+        self.rect.x = self.x
