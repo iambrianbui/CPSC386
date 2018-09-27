@@ -1,20 +1,20 @@
 import pygame
 
 
-class Paddle():
+class P2Paddle():
 
     def __init__(self, ai_settings, screen):
-        super(Paddle, self).__init__()
+        super(P2Paddle, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
 
         #  Load the paddle image and get its rect
-        self.image = pygame.image.load('images/p1paddle.png')
+        self.image = pygame.image.load('images/p2paddle.png')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
         self.rect.centery = self.screen_rect.centery
-        self.rect.left = self.screen_rect.left
+        self.rect.right = self.screen_rect.right
 
         self.center = float(self.rect.centery)
 
