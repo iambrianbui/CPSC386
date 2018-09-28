@@ -47,7 +47,7 @@ def run_game():
 
         if stats.game_active:
             p1paddle.update()
-            p2paddle.update()
+            p2paddle.ai_update(ai_settings, ball)
             gf.update_ball(ai_settings, stats, sb, screen, p1paddle, p2paddle, ball)
 
         gf.update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button)

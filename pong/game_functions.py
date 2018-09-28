@@ -29,11 +29,6 @@ def check_keydown_events(event, p1paddle, p2paddle):
     elif event.key == pygame.K_d:
         p1paddle.moving_right = True
 
-    elif event.key == pygame.K_UP:
-        p2paddle.moving_up = True
-    elif event.key == pygame.K_DOWN:
-        p2paddle.moving_down = True
-
     elif event.key == pygame.K_ESCAPE:
         sys.exit()
 
@@ -47,11 +42,6 @@ def check_keyup_events(event, p1paddle, p2paddle):
         p1paddle.moving_left = False
     elif event.key == pygame.K_d:
         p1paddle.moving_right = False
-
-    elif event.key == pygame.K_UP:
-        p2paddle.moving_up = False
-    elif event.key == pygame.K_DOWN:
-        p2paddle.moving_down = False
 
 
 def update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button):
@@ -79,9 +69,14 @@ def check_collision(p1paddle, p2paddle, ball, ai_settings):
         ai_settings.ball_x_direction *= -1
         # paddlehit = pygame.mixer.Sound('sounds\pongpaddle.wav')
         # paddlehit.play()
-    if ball.rect.colliderect(p1paddle.uprect) or ball.rect.colliderect(p1paddle.downrect):
+    if ball.rect.colliderect(p1paddle.uprect) or ball.rect.colliderect(p1paddle.downrect) or \
+            ball.rect.colliderect(p2paddle.uprect) or ball.rect.colliderect(p2paddle.downrect):
         ai_settings.ball_y_direction *= -1
 
+
+def check_bot_top(screen, ball):
+        screen_rect = screen.get_rect()
+        return ball.rect.bottom >= screen_rect.bottom or ball.rect.top <= 0
 
 
 def check_point_scored(ai_settings, stats, sb, screen, ball):
@@ -92,6 +87,13 @@ def check_point_scored(ai_settings, stats, sb, screen, ball):
     elif ball.rect.left <= screen_rect.left:
         stats.p2score += 1
         reset_game(ai_settings, stats, sb, screen, ball)
+    elif check_bot_top(screen, ball):
+        if ball.rect.right > screen_rect.centerx:
+            stats.p1score += 1
+            reset_game(ai_settings, stats, sb, screen, ball)
+        elif ball.rect.left < screen_rect.centerx:
+            stats.p2score += 1
+            reset_game(ai_settings, stats, sb, screen, ball)
 
 
 def reset_game(ai_settings, stats, sb, screen, ball):

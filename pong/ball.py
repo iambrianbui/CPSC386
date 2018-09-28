@@ -24,14 +24,10 @@ class Ball(Sprite):
         screen_rect = self.screen.get_rect()
         if self.rect.bottom >= screen_rect.bottom or self.rect.top <= 0:
             ai_settings.ball_y_direction *= -1
-            # wallhit = pygame.mixer.Sound('sounds\pongwall.wav')
-            # wallhit.play()
 
 
     #  Move the ball
     def update(self, ai_settings):
-        self.check_bot_top(ai_settings)
-
         self.y += (self.speed_factor * self.ai_settings.ball_y_direction)
         self.x += (self.speed_factor * self.ai_settings.ball_x_direction)
         #  Update the rect position
@@ -46,7 +42,7 @@ class Ball(Sprite):
 
     #  Reset the ball location
     def reset_ball(self):
-        self.y = 1
+        self.y = 50
         self.x = 600
         self.rect.y = self.y
         self.rect.x = self.x

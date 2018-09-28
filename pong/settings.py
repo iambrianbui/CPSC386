@@ -10,6 +10,10 @@ class Settings():
         #  Paddle settings
         self.paddle_speed_factor = 3
 
+        #  AI Paddle tracking speed
+        #  0.7 = Easy, 0.9 = Medium, 1.0 = Hard
+        self.ai_difficulty = 0.9
+
         #  Ball settings
         self.ball_speed_factor = 3
         self.ball_width = 16
