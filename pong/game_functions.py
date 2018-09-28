@@ -24,6 +24,10 @@ def check_keydown_events(event, p1paddle, p2paddle):
         p1paddle.moving_up = True
     elif event.key == pygame.K_s:
         p1paddle.moving_down = True
+    elif event.key == pygame.K_a:
+        p1paddle.moving_left = True
+    elif event.key == pygame.K_d:
+        p1paddle.moving_right = True
 
     elif event.key == pygame.K_UP:
         p2paddle.moving_up = True
@@ -39,6 +43,10 @@ def check_keyup_events(event, p1paddle, p2paddle):
         p1paddle.moving_up = False
     elif event.key == pygame.K_s:
         p1paddle.moving_down = False
+    elif event.key == pygame.K_a:
+        p1paddle.moving_left = False
+    elif event.key == pygame.K_d:
+        p1paddle.moving_right = False
 
     elif event.key == pygame.K_UP:
         p2paddle.moving_up = False
@@ -69,8 +77,10 @@ def update_ball(ai_settings, stats, sb, screen, p1paddle, p2paddle, ball):
 def check_collision(p1paddle, p2paddle, ball, ai_settings):
     if ball.rect.colliderect(p1paddle.rect) or  ball.rect.colliderect(p2paddle.rect):
         ai_settings.ball_x_direction *= -1
-        paddlehit = pygame.mixer.Sound('sounds\pongpaddle.wav')
-        paddlehit.play()
+        # paddlehit = pygame.mixer.Sound('sounds\pongpaddle.wav')
+        # paddlehit.play()
+    if ball.rect.colliderect(p1paddle.uprect) or ball.rect.colliderect(p1paddle.downrect):
+        ai_settings.ball_y_direction *= -1
 
 
 
@@ -85,8 +95,8 @@ def check_point_scored(ai_settings, stats, sb, screen, ball):
 
 
 def reset_game(ai_settings, stats, sb, screen, ball):
-    point = pygame.mixer.Sound('sounds\pongpoint.wav')
-    point.play()
+    # point = pygame.mixer.Sound('sounds\pongpoint.wav')
+    # point.play()
     sb.prep_score(ai_settings)
     ball.reset_ball()
     check_game_over(ai_settings, stats)

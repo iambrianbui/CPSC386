@@ -24,8 +24,8 @@ class Ball(Sprite):
         screen_rect = self.screen.get_rect()
         if self.rect.bottom >= screen_rect.bottom or self.rect.top <= 0:
             ai_settings.ball_y_direction *= -1
-            wallhit = pygame.mixer.Sound('sounds\pongwall.wav')
-            wallhit.play()
+            # wallhit = pygame.mixer.Sound('sounds\pongwall.wav')
+            # wallhit.play()
 
 
     #  Move the ball

@@ -18,13 +18,33 @@ class P1Paddle():
 
         self.center = float(self.rect.centery)
 
+        #  Load the upper and lower paddles and get its rect
+        self.upimage = pygame.image.load('images/wallpaddle.png')
+        self.uprect = self.upimage.get_rect()
+
+        self.uprect.centerx = self.screen_rect.centerx - (ai_settings.screen_width / 4)
+        self.uprect.top = self.screen_rect.top + 32
+
+        self.downimage = pygame.image.load('images/wallpaddle.png')
+        self.downrect = self.downimage.get_rect()
+
+        self.downrect.centerx = self.screen_rect.centerx - (ai_settings.screen_width / 4)
+        self.downrect.top = self.screen_rect.bottom - 32
+
+        self.upcenter = float(self.uprect.centerx)
+        self.downcenter = float(self.downrect.centerx)
+
         #  Movement flag
         self.moving_up = False
         self.moving_down = False
+        self.moving_left = False
+        self.moving_right = False
 
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
+        self.screen.blit(self.upimage, self.uprect)
+        self.screen.blit(self.downimage, self.downrect)
 
 
     def update(self):
@@ -32,5 +52,13 @@ class P1Paddle():
             self.center -= self.ai_settings.paddle_speed_factor
         if self.moving_down and self.rect.bottom < self.screen_rect.bottom:
             self.center += self.ai_settings.paddle_speed_factor
+        if self.moving_right and self.uprect.right < self.screen_rect.centerx:
+            self.upcenter += self.ai_settings.paddle_speed_factor
+            self.downcenter += self.ai_settings.paddle_speed_factor
+        if self.moving_left and self.uprect.left > self.screen_rect.left:
+            self.upcenter -= self.ai_settings.paddle_speed_factor
+            self.downcenter -= self.ai_settings.paddle_speed_factor
 
         self.rect.centery = self.center
+        self.uprect.centerx = self.upcenter
+        self.downrect.centerx = self.downcenter

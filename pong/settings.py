@@ -8,10 +8,10 @@ class Settings():
         self.bg_color = (0, 0, 0)
 
         #  Paddle settings
-        self.paddle_speed_factor = 1.5
+        self.paddle_speed_factor = 3
 
         #  Ball settings
-        self.ball_speed_factor = 1
+        self.ball_speed_factor = 3
         self.ball_width = 16
         self.ball_height = 16
         self.ball_color = 255, 255, 255
