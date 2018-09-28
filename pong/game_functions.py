@@ -17,6 +17,7 @@ def check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle, title_
         elif event.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
             check_play_button(ai_settings, stats, sb, play_button, mouse_x, mouse_y)
+            check_difficulty(ai_settings, title_screen, mouse_x, mouse_y)
 
 
 def check_keydown_events(event, p1paddle, p2paddle):
@@ -124,3 +125,12 @@ def check_play_button(ai_settings, stats, sb, play_button, mouse_x, mouse_y):
 
         #  Reset the scoreboard
         sb.prep_score(ai_settings)
+
+
+def check_difficulty(ai_settings, title_screen, mouse_x, mouse_y):
+    if title_screen.easyrect.collidepoint(mouse_x, mouse_y):
+        ai_settings.ai_difficulty = 0.7
+    elif title_screen.medrect.collidepoint(mouse_x, mouse_y):
+        ai_settings.ai_difficulty = 0.9
+    elif title_screen.hardrect.collidepoint(mouse_x, mouse_y):
+        ai_settings.ai_difficulty = 1.0
