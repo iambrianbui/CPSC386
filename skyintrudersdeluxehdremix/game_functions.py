@@ -90,10 +90,8 @@ def fire_bullet(ai_settings, screen, plane, bullets):
     if len(bullets) < ai_settings.bullets_allowed:
         new_bullet = Bullet(ai_settings, screen, plane)
         bullets.add(new_bullet)
-        #pygame.mixer.music.load('sounds/fire.mp3')
-        fire = pygame.mixer.Sound('sounds/fire.mp3')
-        pygame.mixer.music.play(fire)
-
+        fire = pygame.mixer.Sound('sounds/fire.ogg')
+        fire.play()
 
 
 def check_keyup_events(event, plane):

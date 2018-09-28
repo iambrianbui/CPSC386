@@ -19,3 +19,6 @@ class Settings():
         #  Ball direction
         self.ball_x_direction = -1               #  1 = moving to the right
         self.ball_y_direction = 1               #  1 = moving down
+
+        #  Max score
+        self.score_limit = 5

@@ -19,15 +19,16 @@ class Ball(Sprite):
         self.speed_factor = ai_settings.ball_speed_factor
 
 
+    #  Check if the ball hits the bottom or top walls
     def check_bot_top(self, ai_settings):
         screen_rect = self.screen.get_rect()
-        if self.rect.bottom >= screen_rect.bottom:
+        if self.rect.bottom >= screen_rect.bottom or self.rect.top <= 0:
             ai_settings.ball_y_direction *= -1
-        elif self.rect.top <= 0:
-            ai_settings.ball_y_direction *= -1
+            wallhit = pygame.mixer.Sound('sounds\pongwall.wav')
+            wallhit.play()
 
 
-    #  Move the bullet
+    #  Move the ball
     def update(self, ai_settings):
         self.check_bot_top(ai_settings)
 
@@ -38,10 +39,12 @@ class Ball(Sprite):
         self.rect.x = self.x
 
 
+    #  Actually draw the ball
     def draw_ball(self):
         pygame.draw.rect(self.screen, self.color, self.rect)
 
 
+    #  Reset the ball location
     def reset_ball(self):
         self.y = 1
         self.x = 600

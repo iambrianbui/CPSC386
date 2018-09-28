@@ -9,12 +9,12 @@ class P2Paddle():
         self.ai_settings = ai_settings
 
         #  Load the paddle image and get its rect
-        self.image = pygame.image.load('images/p2paddle.png')
+        self.image = pygame.image.load('images/paddle.png')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
         self.rect.centery = self.screen_rect.centery
-        self.rect.right = self.screen_rect.right
+        self.rect.right = self.screen_rect.right - 64
 
         self.center = float(self.rect.centery)
 

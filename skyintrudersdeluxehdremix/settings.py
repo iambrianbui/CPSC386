@@ -32,7 +32,7 @@ class Settings():
     def initialize_dynamic_settings(self):
         self.plane_speed_factor = 3
         self.bullet_speed_factor = 3
-        self.alien_speed_factor = 30
+        self.alien_speed_factor = 3
 
         #  1 is right, -1 is left
         self.fleet_direction = 1

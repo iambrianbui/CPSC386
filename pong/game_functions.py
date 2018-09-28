@@ -67,10 +67,11 @@ def update_ball(ai_settings, stats, sb, screen, p1paddle, p2paddle, ball):
 
 
 def check_collision(p1paddle, p2paddle, ball, ai_settings):
-    if ball.rect.colliderect(p1paddle.rect):
+    if ball.rect.colliderect(p1paddle.rect) or  ball.rect.colliderect(p2paddle.rect):
         ai_settings.ball_x_direction *= -1
-    elif ball.rect.colliderect(p2paddle.rect):
-        ai_settings.ball_x_direction *= -1
+        paddlehit = pygame.mixer.Sound('sounds\pongpaddle.wav')
+        paddlehit.play()
+
 
 
 def check_point_scored(ai_settings, stats, sb, screen, ball):
@@ -84,8 +85,17 @@ def check_point_scored(ai_settings, stats, sb, screen, ball):
 
 
 def reset_game(ai_settings, stats, sb, screen, ball):
+    point = pygame.mixer.Sound('sounds\pongpoint.wav')
+    point.play()
     sb.prep_score(ai_settings)
     ball.reset_ball()
+    check_game_over(ai_settings, stats)
+
+
+def check_game_over(ai_settings, stats):
+    if stats.p1score >= ai_settings.score_limit or stats.p2score >= ai_settings.score_limit:
+        stats.game_active = False
+        pygame.mouse.set_visible(True)
 
 
 def check_play_button(ai_settings, stats, sb, play_button, mouse_x, mouse_y):

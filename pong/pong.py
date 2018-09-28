@@ -15,6 +15,7 @@ import game_functions as gf
 
 #  Init game and create a screen object
 def run_game():
+    pygame.mixer.pre_init(44100, 16, 2, 4096)
     pygame.init()
     ai_settings = Settings()
     screen = pygame.display.set_mode((ai_settings.screen_width,
