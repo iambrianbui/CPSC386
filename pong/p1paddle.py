@@ -1,7 +1,7 @@
 import pygame
 
 
-class P1Paddle():
+class P1Paddle:
 
     def __init__(self, ai_settings, screen):
         super(P1Paddle, self).__init__()
@@ -40,12 +40,10 @@ class P1Paddle():
         self.moving_left = False
         self.moving_right = False
 
-
     def blitme(self):
         self.screen.blit(self.image, self.rect)
         self.screen.blit(self.upimage, self.uprect)
         self.screen.blit(self.downimage, self.downrect)
-
 
     def update(self):
         if self.moving_up and self.rect.top > self.screen_rect.top:

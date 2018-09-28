@@ -1,5 +1,4 @@
-class Settings():
-
+class Settings:
 
     def __init__(self):
         #  Screen settings
@@ -21,8 +20,8 @@ class Settings():
         self.ball_color = 255, 255, 255
 
         #  Ball direction
-        self.ball_x_direction = -1               #  1 = moving to the right
-        self.ball_y_direction = 1               #  1 = moving down
+        self.ball_x_direction = -1              # 1 = moving to the right
+        self.ball_y_direction = 1               # 1 = moving down
 
         #  Max score
         self.score_limit = 5

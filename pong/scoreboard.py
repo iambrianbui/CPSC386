@@ -1,9 +1,7 @@
 import pygame.font
-from pygame.sprite import Group
 
 
-class Scoreboard():
-
+class Scoreboard:
 
     def __init__(self, ai_settings, screen, stats):
         self.screen = screen
@@ -18,11 +16,8 @@ class Scoreboard():
         #  Prepare the HUD
         self.prep_score(ai_settings)
 
-
     #  Prepare the score on both sides
     def prep_score(self, ai_settings):
-        p1score = int(round(self.stats.p1score, -1))
-        p2score = int(round(self.stats.p2score, -1))
         p1score_str = str(self.stats.p1score)
         p2score_str = str(self.stats.p2score)
 
@@ -38,8 +33,12 @@ class Scoreboard():
         self.p2score_rect.y = 20
         self.p2score_rect.x = (ai_settings.screen_width/2) + 64
 
-
     #  Actually display the score
     def show_score(self):
         self.screen.blit(self.p1score_image, self.p1score_rect)
         self.screen.blit(self.p2score_image, self.p2score_rect)
+        self.dashed_line()
+
+    def dashed_line(self):
+        pygame.draw.line(self.screen, self.text_color, [600, 0], [600, 800], 3)
+

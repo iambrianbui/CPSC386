@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c3bf6c-6708-4683-a1a7-60e126d43bc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pong/ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/ball.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pong/titlescreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/game_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong/p2paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/p2paddle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/game_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/p1paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/p1paddle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/pong.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/pong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +34,7 @@
           <entry key="LICENSE" value="1" />
           <entry key="bmp" value="1" />
           <entry key="png" value="2" />
-          <entry key="py" value="44" />
+          <entry key="py" value="48" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -39,17 +42,17 @@
         <counts>
           <entry key="Image" value="3" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="44" />
+          <entry key="Python" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12000" />
+          <entry key="py" value="13352" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="12000" />
+          <entry key="Python" value="13352" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -103,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/pong.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+            <state relative-caret-position="600">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -112,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/ball.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
@@ -127,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+            <state relative-caret-position="-1133">
+              <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -139,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="135">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -155,13 +158,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/p1paddle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pong/scoreboard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pong/button.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="65" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -170,7 +188,19 @@
         <entry file="file://$PROJECT_DIR$/pong/game_stats.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1538158843000" expanded="true" signature="16:22" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pong/titlescreen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -221,24 +251,25 @@
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/skyintruders.py" />
         <option value="$PROJECT_DIR$/pong/images/game_functions.py" />
         <option value="$PROJECT_DIR$/pong/paddle.py" />
-        <option value="$PROJECT_DIR$/pong/scoreboard.py" />
-        <option value="$PROJECT_DIR$/pong/game_stats.py" />
         <option value="$PROJECT_DIR$/pong/button.py" />
         <option value="$PROJECT_DIR$/pong/readme.txt" />
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/game_functions.py" />
         <option value="$PROJECT_DIR$/skyintrudersdeluxehdremix/settings.py" />
-        <option value="$PROJECT_DIR$/pong/p1paddle.py" />
-        <option value="$PROJECT_DIR$/pong/pong.py" />
         <option value="$PROJECT_DIR$/pong/p2paddle.py" />
-        <option value="$PROJECT_DIR$/pong/settings.py" />
-        <option value="$PROJECT_DIR$/pong/game_functions.py" />
         <option value="$PROJECT_DIR$/pong/ball.py" />
+        <option value="$PROJECT_DIR$/pong/game_functions.py" />
+        <option value="$PROJECT_DIR$/pong/pong.py" />
+        <option value="$PROJECT_DIR$/pong/settings.py" />
+        <option value="$PROJECT_DIR$/pong/scoreboard.py" />
+        <option value="$PROJECT_DIR$/pong/p1paddle.py" />
+        <option value="$PROJECT_DIR$/pong/game_stats.py" />
+        <option value="$PROJECT_DIR$/pong/titlescreen.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
-    <option name="y" value="42" />
+    <option name="x" value="44" />
+    <option name="y" value="50" />
     <option name="width" value="1746" />
     <option name="height" value="1337" />
   </component>
@@ -262,12 +293,6 @@
               <item name="CPSC386" type="462c0819:PsiDirectoryNode" />
               <item name="pong" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CPSC386" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPSC386" type="462c0819:PsiDirectoryNode" />
-              <item name="pong" type="462c0819:PsiDirectoryNode" />
-              <item name="sounds" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -278,7 +303,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/iambrianbui/Documents/GitHub/CPSC386/pong/game_functions.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -447,7 +472,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="42" width="1746" height="1337" extended-state="0" />
+    <frame x="44" y="50" width="1746" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34608695" />
@@ -617,13 +642,6 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/pygame/sprite.py" />
     <entry file="file://$PROJECT_DIR$/pong/paddle.py" />
-    <entry file="file://$PROJECT_DIR$/pong/button.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pong/images/paddle.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -664,68 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pong/pong.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pong/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/p1paddle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="63" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/p2paddle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="65" column="98" selection-start-line="65" selection-start-column="98" selection-end-line="65" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/scoreboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/game_stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,6 +696,78 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="65" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1133">
+          <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/pong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/scoreboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/p2paddle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="65" column="98" selection-start-line="65" selection-start-column="98" selection-end-line="65" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/game_stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1538158843000" expanded="true" signature="16:22" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/p1paddle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pong/titlescreen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
         </state>
       </provider>
     </entry>

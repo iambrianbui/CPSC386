@@ -2,7 +2,7 @@ import sys
 
 import pygame
 
-def check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle):
+def check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle, title_screen):
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -44,16 +44,17 @@ def check_keyup_events(event, p1paddle, p2paddle):
         p1paddle.moving_right = False
 
 
-def update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button):
+def update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button, title_screen):
     screen.fill(ai_settings.bg_color)
-    p1paddle.blitme()
-    p2paddle.blitme()
-    ball.draw_ball()
+    if stats.game_active:
+        p1paddle.blitme()
+        p2paddle.blitme()
+        ball.draw_ball()
+        sb.show_score()
 
-    sb.show_score()
-
-    if not stats.game_active:
+    else:
         play_button.draw_button()
+        title_screen.draw_title()
 
     #  Make the most recently drawn screen visible
     pygame.display.flip()

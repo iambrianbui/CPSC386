@@ -7,6 +7,7 @@ from settings import Settings
 from game_stats import GameStats
 from scoreboard import Scoreboard
 from button import Button
+from titlescreen import TitleScreen
 from p1paddle import P1Paddle
 from p2paddle import P2Paddle
 from ball import Ball
@@ -24,6 +25,7 @@ def run_game():
 
     #  Make play button
     play_button = Button(ai_settings, screen, "Play")
+    title_screen = TitleScreen(ai_settings, screen, "PONG")
 
     #  Handle stats and scoreboard
     stats = GameStats(ai_settings)
@@ -38,19 +40,17 @@ def run_game():
     #  Make a ball
     ball = Ball(ai_settings, screen, p1paddle)
 
-
-
     #  Start the main loop for the game.
     while True:
         #  Watch for keyboard and mouse events
-        gf.check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle)
+        gf.check_events(ai_settings, stats, sb, play_button, p1paddle, p2paddle, title_screen)
 
         if stats.game_active:
             p1paddle.update()
             p2paddle.ai_update(ai_settings, ball)
             gf.update_ball(ai_settings, stats, sb, screen, p1paddle, p2paddle, ball)
 
-        gf.update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button)
+        gf.update_screen(ai_settings, screen, stats, sb, p1paddle, p2paddle, ball, play_button, title_screen)
 
 
 run_game()
